@@ -13,12 +13,12 @@
         android:theme="@style/Theme.HelloActivity">
         <activity
             android:name=".FirstActivity"
+            android:launchMode="singleTop"
             android:exported="true"
             android:label="This is FirstActivity"
             android:theme="@style/Theme.HelloActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

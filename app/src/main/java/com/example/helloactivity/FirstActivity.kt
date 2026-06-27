@@ -10,22 +10,28 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class FirstActivity : AppCompatActivity() {
+class FirstActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("FirstActivity", this.toString())
         setContentView(R.layout.first_layout)
         val button1: Button = findViewById(R.id.button1)
         button1.setOnClickListener {
 //            val intent = Intent("com.example.helloactivity.ACTION_START")
 //            intent.addCategory("com.example.activitytest.MY_CATEGORY")
-//            val intent = Intent(Intent.ACTION_VIEW)
-//            intent.data = Uri.parse("https://www.baidu.com")
-//            startActivity(intent)
-            val data = "Hello SecondActivity"
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("extra_data", data)
-            startActivityForResult(intent, 1)
 
+//            val intent = Intent(Intent.ACTION_VIEW)
+//            intent. Data = Uri.parse("https://www.baidu.com")
+//            startActivity(intent)
+
+//            val data = "Hello SecondActivity"
+//            val intent = Intent (this, SecondActivity::class.java)
+//            intent.putExtra("extra_data", data)
+//            startActivityForResult(intent, 1)
+
+//            val intent = Intent(this, SecondActivity::class.java)
+//            startActivity(intent)
+            SecondActivity.actionStart(this, "Hello!", "Who are you?")
         }
     }
 
