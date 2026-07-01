@@ -9,10 +9,12 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import doSomething
 
 class FirstActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        doSomething()
         Log.d("FirstActivity", this.toString())
         setContentView(R.layout.first_layout)
         val button1: Button = findViewById(R.id.button1)
