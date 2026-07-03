@@ -13,12 +13,13 @@
         android:theme="@style/Theme.HelloActivity">
         <activity
             android:name=".FirstActivity"
-            android:launchMode="singleTop"
             android:exported="true"
             android:label="This is FirstActivity"
+            android:launchMode="singleTop"
             android:theme="@style/Theme.HelloActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,6 +31,7 @@
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="com.example.helloactivity.ACTION_START" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.example.activitytest.MY_CATEGORY" />
             </intent-filter>
@@ -41,11 +43,17 @@
             android:theme="@style/Theme.HelloActivity"
             android:windowSoftInputMode="adjustResize">
             <intent-filter tools:ignore="AppLinkUrlError">
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="https" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".UIWidgetTest"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
