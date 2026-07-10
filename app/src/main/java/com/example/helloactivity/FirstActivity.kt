@@ -15,7 +15,7 @@ class FirstActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.first_layout)
-        val intent =Intent(this, UILayoutTest::class.java)
+        val intent =Intent(this, UICustomVIews::class.java)
         startActivity(intent)
 //        doSomething()
         Log.d("FirstActivity", this.toString())
