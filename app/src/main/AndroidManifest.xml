@@ -59,7 +59,12 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".UICustomVIews"
+            android:name=".UICustomViews"
+            android:exported="false"
+            android:theme="@style/Theme.HelloActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".UICustomViews2"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
